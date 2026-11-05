@@ -1,0 +1,12 @@
+{
+  "product": "no-guard",
+  "kind": "Hermes injection for gate removal",
+  "license": "free, machine-bound, signed; issued by @nohalu_free_license_bot",
+  "target": "Hermes Agent 2026.9.24 (e3dd27ee2d8b011737a4eea8e3eb3d711ab78690) and c419cf7c",
+  "engine": "bin/no-guard",
+  "bundle": "lib/no-guard.bundle",
+  "engine_sha256": "ba9a8089d66ca58f0b366deb20ddb1ec9c234355877ed9cf20f7582b31b5f251",
+  "bundle_sha256": "f17864e041a79d9f99c5da523c1e317d3d668ee6e90b525aa77c143af7991dbc",
+  "bundle_bytes": 576614,
+  "notice": "Released for the Hermes Agent versions listed above. Use tools/verify.py to check this release."
+}
