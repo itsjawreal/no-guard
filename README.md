@@ -79,6 +79,18 @@ NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard --verify
 Jangan menjalankan `install` dari rilis lama setelah `git pull` — selalu pakai
 `./bin/no-guard` dari working tree yang sudah diperbarui.
 
+Langkah `--uninstall` bukan formalitas: `install` di atas pemasangan lama tidak
+menimpa seluruh komponen, sehingga sisa versi lama bisa tetap aktif. Urutan di
+atas adalah satu-satunya bentuk pembaruan yang didukung.
+
+Kalau `git pull` menolak dengan `You are not currently on a branch`, repo berada
+pada checkout tag. Pakai:
+
+```bash
+git fetch --tags origin
+git reset --hard origin/main
+```
+
 ## Perintah
 
 | Perintah | Fungsi |

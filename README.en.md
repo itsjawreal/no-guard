@@ -80,6 +80,18 @@ NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard --verify
 Do not run `install` from the old release after `git pull` — always use
 `./bin/no-guard` from the updated working tree.
 
+The `--uninstall` step is not a formality: `install` over an existing
+installation does not overwrite every component, so leftovers from the old
+version can stay active. The order above is the only supported update path.
+
+If `git pull` refuses with `You are not currently on a branch`, the repo sits on
+a tag checkout. Use:
+
+```bash
+git fetch --tags origin
+git reset --hard origin/main
+```
+
 ## Commands
 
 | Command | Function |

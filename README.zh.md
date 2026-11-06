@@ -75,6 +75,17 @@ NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard --verify
 `git pull` 之后不要再用旧版本的 `install` — 始终使用更新后工作树里的
 `./bin/no-guard`。
 
+`--uninstall` 这一步不是形式：在已有安装之上直接 `install` 不会覆盖全部组件，
+旧版本的残留可能仍然生效。上面的顺序是唯一受支持的更新方式。
+
+如果 `git pull` 报 `You are not currently on a branch`，说明仓库停在某个 tag
+的 checkout 上。改用：
+
+```bash
+git fetch --tags origin
+git reset --hard origin/main
+```
+
 ## 命令
 
 | 命令 | 功能 |

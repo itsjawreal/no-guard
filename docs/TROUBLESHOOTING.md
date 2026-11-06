@@ -14,6 +14,8 @@ Bahasa: **Indonesia** · [English](TROUBLESHOOTING.en.md) · [简体中文](TROU
 | `tools/verify.py` MISMATCH | rilis rusak atau tidak lengkap → unduh ulang, jangan diterapkan |
 | `--verify` gagal | injeksi terpasang menyimpang → jalankan `--repair` (bukan `tools/verify.py`) |
 | `/mod` menampilkan peringatan drift pada workspace tersembunyi, atau `--status` menyarankan restart padahal gateway sudah start setelah pemasangan | pakai rilis terbaru; ini koreksi tampilan status, kondisi injeksi tidak berubah |
+| `/mod` masih menampilkan `STALE — 25 entri` atau `bytecode basi` setelah pembaruan | pastikan versi baru benar-benar terpasang; bila masih muncul, jalankan `--uninstall` dulu lalu `install` — `install` di atas pemasangan lama tidak menimpa `mod_status.py` |
+| `--verify` keluar dengan rc `3` | injeksi aktif tetapi gateway mengimpor workspace lain; set `HERMES_WORKSPACE=` ke workspace yang dipakai gateway — ini bukan injeksi yang gagal |
 | Versi Hermes beda | lihat [`COMPATIBILITY.md`](COMPATIBILITY.md), jangan dipaksakan |
 | Gateway tidak berubah | cek `--status`; pastikan workspace yang dipakai gateway sama (set `HERMES_WORKSPACE=`) |
 | Koneksi Telegram putus | bukan bagian dari injeksi; konfigurasi koneksi tidak diubah, cek layanan gateway seperti biasa |
