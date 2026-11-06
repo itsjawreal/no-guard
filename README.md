@@ -66,22 +66,23 @@ Detail dan env opsional: [`docs/INSTALL.md`](docs/INSTALL.md). Pemecahan masalah
 
 ## Pembaruan versi
 
-Sudah memasang rilis sebelumnya? Perbarui repo lalu terapkan ulang dengan binary
-yang baru — lisensi lama tetap berlaku:
+Sudah memasang rilis sebelumnya? Perbarui repo lalu jalankan `install` dengan
+binary yang baru — lisensi lama tetap berlaku. Versi yang terpasang dinaikkan di
+tempat, dan perubahan yang Anda buat sendiri tetap dipertahankan:
 
 ```bash
 git pull
-NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard --uninstall
 NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard install
-NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard --verify
+NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard --status
 ```
 
 Jangan menjalankan `install` dari rilis lama setelah `git pull` — selalu pakai
 `./bin/no-guard` dari working tree yang sudah diperbarui.
 
-Langkah `--uninstall` bukan formalitas: `install` di atas pemasangan lama tidak
-menimpa seluruh komponen, sehingga sisa versi lama bisa tetap aktif. Urutan di
-atas adalah satu-satunya bentuk pembaruan yang didukung.
+Bila ada berkas yang Anda ubah sampai berbenturan dengan versi baru, berkas itu
+dibiarkan apa adanya dan namanya disebutkan di keluaran; Anda bisa menggabungkan
+sendiri bila ingin mengikuti versi terbaru. Ingin pemasangan yang benar-benar
+bersih? `--uninstall` lalu `install` tetap tersedia, tapi bukan lagi keharusan.
 
 Kalau `git pull` menolak dengan `You are not currently on a branch`, repo berada
 pada checkout tag. Pakai:

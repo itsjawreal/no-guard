@@ -63,20 +63,21 @@ NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard --uninstall
 
 ## 更新版本
 
-已安装旧版本？更新仓库后用新的 binary 重新应用即可，原许可仍然有效：
+已安装旧版本？更新仓库后用新的 binary 运行 `install` 即可，原许可仍然有效。
+已安装的版本会就地升级，您自己做过的修改会保留：
 
 ```bash
 git pull
-NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard --uninstall
 NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard install
-NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard --verify
+NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard --status
 ```
 
 `git pull` 之后不要再用旧版本的 `install` — 始终使用更新后工作树里的
 `./bin/no-guard`。
 
-`--uninstall` 这一步不是形式：在已有安装之上直接 `install` 不会覆盖全部组件，
-旧版本的残留可能仍然生效。上面的顺序是唯一受支持的更新方式。
+如果您修改过的文件与新版本冲突，该文件会原样保留，并在输出中列出文件名；
+如需跟进最新版本可自行合并。想要完全干净的安装，仍可使用 `--uninstall` 后
+再 `install`，但这不再是必需步骤。
 
 如果 `git pull` 报 `You are not currently on a branch`，说明仓库停在某个 tag
 的 checkout 上。改用：

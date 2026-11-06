@@ -67,22 +67,23 @@ Troubleshooting: [`docs/TROUBLESHOOTING.en.md`](docs/TROUBLESHOOTING.en.md).
 
 ## Updating
 
-Already installed an earlier release? Update the repo and re-apply with the new
-binary — your existing license stays valid:
+Already installed an earlier release? Update the repo and run `install` with the
+new binary — your existing license stays valid. The installed version is raised
+in place, and changes you made yourself are preserved:
 
 ```bash
 git pull
-NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard --uninstall
 NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard install
-NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard --verify
+NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard --status
 ```
 
 Do not run `install` from the old release after `git pull` — always use
 `./bin/no-guard` from the updated working tree.
 
-The `--uninstall` step is not a formality: `install` over an existing
-installation does not overwrite every component, so leftovers from the old
-version can stay active. The order above is the only supported update path.
+If a file you changed conflicts with the new release, that file is left as-is and
+named in the output; you can merge it yourself if you want the latest version.
+For a completely clean install, `--uninstall` followed by `install` is still
+available, but it is no longer required.
 
 If `git pull` refuses with `You are not currently on a branch`, the repo sits on
 a tag checkout. Use:
