@@ -13,6 +13,7 @@
 | `--dry-run` 退出码非 0 | 阅读 stderr 提示（workspace 未找到／不匹配）；这不是静默失败 |
 | `tools/verify.py` 输出 MISMATCH | 发布包损坏或不完整 → 重新下载，不要应用 |
 | `--verify` 失败 | 已安装注入发生偏离 → 运行 `--repair`（不是 `tools/verify.py`） |
+| 隐藏 workspace 下 `/mod` 出现漂移提示，或 `--status` 在 gateway 安装后启动时仍建议重启 | 使用最新版本；这是状态显示的修正，注入状态本身不变 |
 | Hermes 版本不同 | 参见 [`COMPATIBILITY.zh.md`](COMPATIBILITY.zh.md)，不要强制使用 |
 | gateway 未变化 | 检查 `--status`；确认 gateway 使用同一 workspace（设置 `HERMES_WORKSPACE=`） |
 | Telegram 连接断开 | 与注入无关；连接配置未被改动，按常规检查 gateway 服务 |

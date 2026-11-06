@@ -13,6 +13,7 @@ Languages: [Indonesia](TROUBLESHOOTING.md) · **English** · [简体中文](TROU
 | `--dry-run` exits with non-zero rc | read the message on stderr (workspace not found / does not match); this is not a silent failure |
 | `tools/verify.py` MISMATCH | release is damaged or incomplete → download again, do not apply |
 | `--verify` fails | installed injection has drifted → run `--repair` (not `tools/verify.py`) |
+| `/mod` shows a drift warning for a hidden workspace, or `--status` suggests a restart even though the gateway started after installation | use the latest release; these are status-display corrections, the injection state is unchanged |
 | different Hermes version | see [`COMPATIBILITY.en.md`](COMPATIBILITY.en.md), do not force it |
 | gateway unchanged | check `--status`; make sure the gateway uses the same workspace (set `HERMES_WORKSPACE=`) |
 | Telegram connection dropped | not part of the injection; connection settings are unchanged, check the gateway service as usual |

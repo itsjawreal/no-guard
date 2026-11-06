@@ -13,6 +13,7 @@ Bahasa: **Indonesia** · [English](TROUBLESHOOTING.en.md) · [简体中文](TROU
 | `--dry-run` keluar dengan rc bukan 0 | baca pesan di stderr (workspace tidak ditemukan / tidak cocok); ini bukan kegagalan diam |
 | `tools/verify.py` MISMATCH | rilis rusak atau tidak lengkap → unduh ulang, jangan diterapkan |
 | `--verify` gagal | injeksi terpasang menyimpang → jalankan `--repair` (bukan `tools/verify.py`) |
+| `/mod` menampilkan peringatan drift pada workspace tersembunyi, atau `--status` menyarankan restart padahal gateway sudah start setelah pemasangan | pakai rilis terbaru; ini koreksi tampilan status, kondisi injeksi tidak berubah |
 | Versi Hermes beda | lihat [`COMPATIBILITY.md`](COMPATIBILITY.md), jangan dipaksakan |
 | Gateway tidak berubah | cek `--status`; pastikan workspace yang dipakai gateway sama (set `HERMES_WORKSPACE=`) |
 | Koneksi Telegram putus | bukan bagian dari injeksi; konfigurasi koneksi tidak diubah, cek layanan gateway seperti biasa |
