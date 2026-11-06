@@ -1,5 +1,7 @@
 # Troubleshooting
 
+Bahasa: **Indonesia** · [English](TROUBLESHOOTING.en.md) · [简体中文](TROUBLESHOOTING.zh.md)
+
 | Gejala | Periksa |
 | --- | --- |
 | `no license found` | set `NO_GUARD_LICENSE`, atau taruh di `$HOME/.hermes/nohalu.license` |
@@ -12,6 +14,7 @@
 | `--verify` gagal | injeksi terpasang menyimpang → jalankan `--repair` (bukan `tools/verify.py`) |
 | Versi Hermes beda | lihat [`COMPATIBILITY.md`](COMPATIBILITY.md), jangan dipaksakan |
 | Gateway tidak berubah | cek `--status`; pastikan workspace yang dipakai gateway sama (set `HERMES_WORKSPACE=`) |
+| Koneksi Telegram putus | bukan bagian dari injeksi; konfigurasi koneksi tidak diubah, cek layanan gateway seperti biasa |
 
 `tools/verify.py` memeriksa **checksum rilis** (biner + bundle).
 `./bin/no-guard --verify` memeriksa **kondisi injeksi yang terpasang**. Keduanya

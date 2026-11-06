@@ -1,5 +1,7 @@
 # no-guard
 
+Bahasa: **Indonesia** · [English](README.en.md) · [简体中文](README.zh.md)
+
 **Hermes injection for gate removal** — untuk **Hermes Agent 2026.9.24**
 (commit `e3dd27ee2d8b011737a4eea8e3eb3d711ab78690`) dan varian
 `c419cf7c864ac0ee511dbd9f7091a8bba0b567ee`. Versi yang sama dengan mod
@@ -10,6 +12,15 @@ injection-nya.
 Gate removal mengubah perilaku persetujuan pada instalasi Hermes yang didukung.
 Ini bukan peningkatan kemampuan model, bukan akses ke sistem lain, dan bukan
 jaminan hasil apa pun di luar cakupan injeksi itu sendiri.
+
+### Yang tidak berubah
+
+Perubahan `no-guard` terbatas pada berkas program Hermes dan berkas status
+serta cadangan injeksi di direktori home Hermes. Ia **tidak** mengubah persona,
+`.env`, `config.yaml`, skills, memori, sesi, atau konfigurasi koneksi (Telegram
+dan platform lain). Tidak ada setup ulang: koneksi, akun, dan pengaturan Hermes
+kamu tetap seperti sediakala. `config.yaml` hanya dibaca untuk pemeriksaan
+kecocokan. Perubahan dapat dikembalikan dengan `--uninstall`.
 
 ---
 

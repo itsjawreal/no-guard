@@ -1,5 +1,7 @@
 # Free licence
 
+Bahasa: **Indonesia** · [English](LICENSE.en.md) · [简体中文](LICENSE.zh.md)
+
 `no-guard` memakai **lisensi gratis, terikat 1 mesin**.
 
 - Penerbitan: `@nohalu_free_license_bot` (Telegram), online sekali saat minta.

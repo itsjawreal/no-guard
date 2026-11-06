@@ -1,5 +1,7 @@
 # Install
 
+Bahasa: **Indonesia** · [English](INSTALL.en.md) · [简体中文](INSTALL.zh.md)
+
 ## 1. Verifikasi rilis
 
 ```bash
@@ -40,6 +42,11 @@ NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard install
 
 `install` adalah perintah yang menulis. `./bin/no-guard` tanpa argumen hanya
 menampilkan bantuan dan tidak mengubah apa pun.
+
+Yang tidak tersentuh: persona, `.env`, `config.yaml` (hanya dibaca), skills,
+memori, sesi, dan konfigurasi koneksi Telegram/platform lain. Tidak perlu
+setup Hermes dari awal atau menyambungkan ulang akun. Rincian ada di
+[`README.md`](../README.md#yang-tidak-berubah).
 
 Lalu cek:
 
