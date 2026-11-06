@@ -9,6 +9,7 @@
 | `license not valid on this host` | 许可签给了另一台机器 → 在本机运行 `--machine` 并重新申请 |
 | `license: bad format` / `missing signature` | 文件不是完整许可；从机器人重新下载 |
 | 参数未知 / 同时指定两个模式 | 查看 `./bin/no-guard --help`；每次执行只能有一个动作 |
+| 安装还没来得及回答就显示 `dibatalkan oleh user` | 使用最新版本，或加 `ASSUME_YES=1` 跳过确认 |
 | `--dry-run` 退出码非 0 | 阅读 stderr 提示（workspace 未找到／不匹配）；这不是静默失败 |
 | `tools/verify.py` 输出 MISMATCH | 发布包损坏或不完整 → 重新下载，不要应用 |
 | `--verify` 失败 | 已安装注入发生偏离 → 运行 `--repair`（不是 `tools/verify.py`） |

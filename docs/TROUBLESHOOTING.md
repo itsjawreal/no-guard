@@ -9,6 +9,7 @@ Bahasa: **Indonesia** · [English](TROUBLESHOOTING.en.md) · [简体中文](TROU
 | `license not valid on this host` | lisensi terbit untuk mesin lain → jalankan `--machine` di mesin ini, minta lisensi baru |
 | `license: bad format` / `missing signature` | file bukan lisensi utuh; unduh ulang dari bot |
 | argumen tidak dikenal / dua mode sekaligus | cek `./bin/no-guard --help`; satu aksi per eksekusi |
+| Install langsung `dibatalkan oleh user` tanpa sempat menjawab | pakai rilis terbaru, atau jalankan dengan `ASSUME_YES=1` untuk melewati prompt |
 | `--dry-run` keluar dengan rc bukan 0 | baca pesan di stderr (workspace tidak ditemukan / tidak cocok); ini bukan kegagalan diam |
 | `tools/verify.py` MISMATCH | rilis rusak atau tidak lengkap → unduh ulang, jangan diterapkan |
 | `--verify` gagal | injeksi terpasang menyimpang → jalankan `--repair` (bukan `tools/verify.py`) |

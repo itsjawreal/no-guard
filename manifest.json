@@ -5,7 +5,7 @@
   "target": "Hermes Agent 2026.9.24 (e3dd27ee2d8b011737a4eea8e3eb3d711ab78690), c419cf7c, and v0.23.0 (2bd378ed1b8d6bf2192cb26e0a55ff3091e6bd19)",
   "engine": "bin/no-guard",
   "bundle": "lib/no-guard.bundle",
-  "engine_sha256": "ea4530eec33752c4a10523a3b6294cc170061dce952e322a2c33332941e8b06b",
+  "engine_sha256": "ac49ffd9ac2ea5d5cd24cd6c340973e86d62ccfcf21ba2d67c2f41df5931f729",
   "bundle_sha256": "d2dac7681d3ad1b9ec41a491369e791d2101439717d4455cfdbc02a8fb69ca6b",
   "bundle_bytes": 589927,
   "notice": "Released for the Hermes Agent versions listed above. Use tools/verify.py to check this release."

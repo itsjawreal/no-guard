@@ -9,6 +9,7 @@ Languages: [Indonesia](TROUBLESHOOTING.md) · **English** · [简体中文](TROU
 | `license not valid on this host` | licence was issued for another machine → run `--machine` here, request a new licence |
 | `license: bad format` / `missing signature` | file is not a complete licence; download it again from the bot |
 | unknown argument / two modes at once | check `./bin/no-guard --help`; one action per execution |
+| Install reports `dibatalkan oleh user` before you can answer | use the latest release, or run with `ASSUME_YES=1` to skip the prompt |
 | `--dry-run` exits with non-zero rc | read the message on stderr (workspace not found / does not match); this is not a silent failure |
 | `tools/verify.py` MISMATCH | release is damaged or incomplete → download again, do not apply |
 | `--verify` fails | installed injection has drifted → run `--repair` (not `tools/verify.py`) |
