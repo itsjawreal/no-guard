@@ -3,9 +3,10 @@
 Languages: [Indonesia](README.md) · **English** · [简体中文](README.zh.md)
 
 **Hermes injection for gate removal** — for **Hermes Agent 2026.9.24**
-(commit `e3dd27ee2d8b011737a4eea8e3eb3d711ab78690`) and the
-`c419cf7c864ac0ee511dbd9f7091a8bba0b567ee` variant. The same version as the
-injection mod.
+(commit `e3dd27ee2d8b011737a4eea8e3eb3d711ab78690`), the
+`c419cf7c864ac0ee511dbd9f7091a8bba0b567ee` variant, and **v0.23.0**
+(commit `2bd378ed1b8d6bf2192cb26e0a55ff3091e6bd19`). The same version as
+the injection mod.
 
 > **Gate removal does not mean your agent can hack NASA.**
 
@@ -64,6 +65,21 @@ NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard --uninstall
 Details and optional env vars: [`docs/INSTALL.en.md`](docs/INSTALL.en.md).
 Troubleshooting: [`docs/TROUBLESHOOTING.en.md`](docs/TROUBLESHOOTING.en.md).
 
+## Updating
+
+Already installed an earlier release? Update the repo and re-apply with the new
+binary — your existing license stays valid:
+
+```bash
+git pull
+NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard --uninstall
+NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard install
+NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard --verify
+```
+
+Do not run `install` from the old release after `git pull` — always use
+`./bin/no-guard` from the updated working tree.
+
 ## Commands
 
 | Command | Function |
@@ -106,4 +122,4 @@ license is issued free of charge by `@nohalu_free_license_bot`; see
 
 ---
 
-*no-guard · free license · Hermes Agent 2026.9.24 / c419cf7c*
+*no-guard · free license · Hermes Agent 2026.9.24 (e3dd27ee), c419cf7c, and v0.23.0*

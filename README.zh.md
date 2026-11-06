@@ -3,8 +3,9 @@
 语言：[Indonesia](README.md) · [English](README.en.md) · **简体中文**
 
 **面向 Hermes 的门控移除注入组件** —— 适用于 **Hermes Agent 2026.9.24**
-（提交 `e3dd27ee2d8b011737a4eea8e3eb3d711ab78690`）及
-`c419cf7c864ac0ee511dbd9f7091a8bba0b567ee` 变体。与注入模块对应的版本完全一致。
+（提交 `e3dd27ee2d8b011737a4eea8e3eb3d711ab78690`）、
+`c419cf7c864ac0ee511dbd9f7091a8bba0b567ee` 变体，以及 **v0.23.0**
+（提交 `2bd378ed1b8d6bf2192cb26e0a55ff3091e6bd19`）。与注入模块对应的版本完全一致。
 
 > **门控移除并不代表你的 Agent 能黑进 NASA。**
 
@@ -60,6 +61,20 @@ NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard --uninstall
 详细说明与可选环境变量：[`docs/INSTALL.zh.md`](docs/INSTALL.zh.md)。
 故障排查：[`docs/TROUBLESHOOTING.zh.md`](docs/TROUBLESHOOTING.zh.md)。
 
+## 更新版本
+
+已安装旧版本？更新仓库后用新的 binary 重新应用即可，原许可仍然有效：
+
+```bash
+git pull
+NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard --uninstall
+NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard install
+NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard --verify
+```
+
+`git pull` 之后不要再用旧版本的 `install` — 始终使用更新后工作树里的
+`./bin/no-guard`。
+
 ## 命令
 
 | 命令 | 功能 |
@@ -100,4 +115,4 @@ Hermes 版本。
 
 ---
 
-*no-guard · 免费许可 · Hermes Agent 2026.9.24 / c419cf7c*
+*no-guard · 免费许可 · Hermes Agent 2026.9.24 (e3dd27ee), c419cf7c, and v0.23.0*

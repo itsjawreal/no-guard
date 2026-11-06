@@ -4,12 +4,11 @@
 
 `no-guard` 面向 **Hermes Agent 2026.9.24**
 （提交 `e3dd27ee2d8b011737a4eea8e3eb3d711ab78690`）及
-`c419cf7c864ac0ee511dbd9f7091a8bba0b567ee` 变体 —— 与注入模块对应的版本完全一致。
+`c419cf7c864ac0ee511dbd9f7091a8bba0b567ee` 变体与 **v0.23.0** (`2bd378ed1b8d6bf2192cb26e0a55ff3091e6bd19`) —— 与注入模块对应的版本完全一致。
 
 | 项目 | 值 |
 | --- | --- |
-| Hermes | 2026.9.24 / `e3dd27ee…` |
-| 变体 | `c419cf7c…` |
+| Hermes | 2026.9.24 / `e3dd27ee…`, `c419cf7c…`, v0.23.0 / `2bd378ed…` |
 | 操作系统 | Linux（支持 WSL2） |
 | Python | Hermes 安装自带的解释器 |
 | 架构 | x86_64 |

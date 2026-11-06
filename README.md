@@ -3,9 +3,10 @@
 Bahasa: **Indonesia** · [English](README.en.md) · [简体中文](README.zh.md)
 
 **Hermes injection for gate removal** — untuk **Hermes Agent 2026.9.24**
-(commit `e3dd27ee2d8b011737a4eea8e3eb3d711ab78690`) dan varian
-`c419cf7c864ac0ee511dbd9f7091a8bba0b567ee`. Versi yang sama dengan mod
-injection-nya.
+(commit `e3dd27ee2d8b011737a4eea8e3eb3d711ab78690`), varian
+`c419cf7c864ac0ee511dbd9f7091a8bba0b567ee`, dan **v0.23.0**
+(commit `2bd378ed1b8d6bf2192cb26e0a55ff3091e6bd19`). Versi yang sama
+dengan mod injection-nya.
 
 > **bukan berarti dengan removal ini agent lo bakal bisa hack NASA.**
 
@@ -63,6 +64,21 @@ NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard --uninstall
 Detail dan env opsional: [`docs/INSTALL.md`](docs/INSTALL.md). Pemecahan masalah:
 [`docs/TROUBLESHOOTING.md`](docs/TROUBLESHOOTING.md).
 
+## Pembaruan versi
+
+Sudah memasang rilis sebelumnya? Perbarui repo lalu terapkan ulang dengan binary
+yang baru — lisensi lama tetap berlaku:
+
+```bash
+git pull
+NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard --uninstall
+NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard install
+NO_GUARD_LICENSE=./nohalu.license ./bin/no-guard --verify
+```
+
+Jangan menjalankan `install` dari rilis lama setelah `git pull` — selalu pakai
+`./bin/no-guard` dari working tree yang sudah diperbarui.
+
 ## Perintah
 
 | Perintah | Fungsi |
@@ -105,4 +121,4 @@ Kode dan rilis ini berada di bawah [`LICENSE`](LICENSE) (MIT). Lisensi pakai
 
 ---
 
-*no-guard · free license · Hermes Agent 2026.9.24 / c419cf7c*
+*no-guard · free license · Hermes Agent 2026.9.24 (e3dd27ee), c419cf7c, and v0.23.0*
