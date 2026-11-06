@@ -6,7 +6,7 @@
   "engine": "bin/no-guard",
   "bundle": "lib/no-guard.bundle",
   "engine_sha256": "ac49ffd9ac2ea5d5cd24cd6c340973e86d62ccfcf21ba2d67c2f41df5931f729",
-  "bundle_sha256": "25fc461759e58d593794c619236e3056ae1d78211b19203e6746d4af33f530d5",
-  "bundle_bytes": 592173,
+  "bundle_sha256": "d98ce5bc37c742e8b6df0236fd590d941fc7e0ccf5d24c21bad00204d6e567cc",
+  "bundle_bytes": 593367,
   "notice": "Released for the Hermes Agent versions listed above. Use tools/verify.py to check this release."
 }
